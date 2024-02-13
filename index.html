@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>yingxin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
+
+  <style>
+
+   #slide{height:1000px;position:relative;overflow:hidden;}
+   #slide ul{width:500%;height:100%;transition:1s;}
+   #slide ul:after{content:"";display:block;clear:both;}
+   #slide li{float:left;width:20%;height:100%;}
+   #slide li:nth-child(1){background: url(https://i.postimg.cc/7ZSLbHn8/p2.png) no-repeat center center fixed; background-size: cover;}
+
+
+
+
+
+
+   #pos1:checked~ul{margin-left:0%;}
+
+
+
+   #pos1:checked~.pos>label:nth-child(1){background:#666;}
+
+
+   img {
+     color: white;
+     font-family: "Sixtyfour", sans-serif;;
+     font-size:60px;
+     text-align:center;
+     margin :10px;
+   }
+
+   *{
+     padding:0;
+     margin:0;
+     font-family: "Sixtyfour", sans-serif;;
+   }
+   html {
+     background: url(https://i.postimg.cc/m2XYVSv2/p1.jpg) no-repeat center center fixed;
+     background-size: cover;
+   }
+   #h1 {
+     color:black;
+     font-family: "Sixtyfour", sans-serif;;
+     font-size:40px;
+     text-align:right;
+     margin :10px;
+     opacity:0.3;
+
+   }
+   #h1:hover {
+     color:gray;
+     font-family: "Sixtyfour", sans-serif;;
+     font-size:40.2px;
+     text-align:right;
+     margin :10px;
+     opacity:0.3;
+   }
+   p {
+     color: white;
+     font-family: "Sixtyfour", sans-serif;;
+     font-size:60px;
+     text-align:left;
+     margin :10px;
+   }
+   p1 {
+     color:black;
+     font-family: 'Abril Fatface';
+     font-size:20px;
+     text-align:left;
+     margin :10px;
+     position: fixed;
+   }
+   p3 {
+     color:black;
+     font-family: "Sixtyfour", sans-serif;;
+     font-size:20px;
+     text-align:left;
+     margin :10px;
+     position: fixed;
+
+   }
+
+    #p2 {
+     color:white;
+     font-family: "Sixtyfour", sans-serif;;
+     font-size:20px;
+     text-align:right;
+     margin :10px;
+   }
+   section{
+     width:1000px;
+     float:left;
+     margin-top:10px;
+     margin-left:0px;
+
+   }
+   aside{
+     width:650px;
+     float:right;
+     margin-left:20px;
+     margin-top:10px;
+   }
+   div.fixed {
+     position: fixed;
+     bottom: 0;
+     right: 0;
+     width: 300px;
+     border: 3px solid #73AD21;
+   }
+   a{
+     color:black;
+     text-decoration:none;
+   }
+   a:link{
+     color:black;
+     text-decoration:none;
+   }
+   .clear {clear:both;}
+   a {text-decoration:none;}
+   a:hover {text-decoration:none;}
+
+   h4{
+     background-color:white;
+     color:black;
+     font-family: "Sixtyfour", sans-serif;;
+     font-size:35px;
+     margin :0px;
+   }
+   h5{
+     background-color:clear;
+     color:white;
+     font-family: "Sixtyfour", sans-serif;;
+     font-size:25px;
+     margin :0px;
+   }
+   h6{
+     background-color:white;
+     color:black;
+     font-family: 'Gothic A1', sans-serif;
+     font-size:13px;
+     font-weight:bold;
+     margin :0px;
+   }
+   h7{
+     background-color:white;
+     color:black;
+     font-family: 'Gothic A1', sans-serif;
+     font-size:17px;
+     font-weight:bold;
+     margin :0px;
+   }
+
+   .top-nav .submenu>li {
+     float: left;
+     position: relative;
+     text-align: left;
+     padding: 0 5px;
+   }
+
+   .top-nav .submenu>li>a {
+     height: 32px;
+     line-height: 32px;
+     padding: 0 15px;
+     color: blue;
+     font-size: 11px;
+     margin-right: 2px;
+   }
+   .top-nav .submenu>li>a:hover, .top-nav .submenu>li:hover>a {
+     text-decoration: none;
+     color: black;
+   }
+
+   .top-nav .submenu>li:hover>ul {
+     display: block;
+   }
+
+   .top-nav .submenu>li ul {
+     list-style: none;
+     position: absolute;
+     width: 400px;
+
+   }
+
+   .top-nav .submenu>li>ul {
+     left: 2px;
+     top: 32px;
+     display: none;
+     margin-left: 5px;
+   }
+
+
+   .top-nav .submenu>li>ul  li {
+     background: none;
+     padding: 0px 10px;
+     position: relative;
+   }
+
+   .top-nav .submenu>li>ul li>a {
+     display: block;
+     padding: 8px;
+     font-family: "Sixtyfour", sans-serif;;
+     font-size:20px;
+     color: white;
+     outline: none;
+     text-align: left;
+   }
+
+   .top-nav .submenu>li>ul li>a:hover, .top-nav .submenu>li>ul>li:hover>a {
+     text-decoration: none;
+     font-family: "Sixtyfour", sans-serif;;
+     font-size: 30px;
+     color: lightgray;
+     background-color: none;
+   }
+
+   .top-nav .submenu>li>ul>li:hover>ul {
+     display: block;
+   }
+
+   img{
+     opacity:1.0;
+   }
+   img:hover{
+     opacity:0.5;
+   }
+
+
+   </style>
+     </head>
+  <body>
+
+
+
+         <aside>
+
+         <div id='h1'><a href='a7.html'>YINGXIN </a>
+
+         </div>
+         </aside>
+
+
+
+         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+         <br><br><br><br><br><br><br><br><br><br><br><br>
+
+     <div id="slide">
+       <input type="radio" name="pos" id="pos1" checked>
+
+
+       <ul>
+         <li>
+            <br><br><br><br><br><br><br><br><br><br>
+            <center>
+            <a href='a6.html'><img src=https://i.postimg.cc/1tFS7M7x/1.png width='450' height='350'></a>
+            <a href='a2.html'><img src=https://i.postimg.cc/sg5pyRB1/MG-6034.jpg width='450' height='350'></a>
+            <a href='a3.html'><img src=https://i.postimg.cc/CMNh3rLY/petit-livre2.jpg width='450' height='350'></a>
+            <a href='a4.html'><img src=https://i.postimg.cc/65chGKWS/3-11.jpg width='450' height='350'></a>
+            <a href='a5.html'><img src=https://i.postimg.cc/fythSCXq/2-1.png width='450' height='350'></a>
+            <a href='a1.html'><img src=https://i.postimg.cc/VkxPrpWx/2.png width='450' height='350'></a>
+            </center>
+
+     </li>
+
+       </ul>
+
+     </div>
+  </body>
+</html>
